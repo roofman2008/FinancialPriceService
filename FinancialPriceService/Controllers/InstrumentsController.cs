@@ -26,7 +26,7 @@ namespace FinancialPriceService.Controllers
             return Ok(instruments);
         }
 
-        [HttpGet("{symbol}")]
+        [HttpGet("{symbol}/price")]
         public IActionResult GetInstrumentPrice(string symbol)
         {
             // Simulate getting the current price
